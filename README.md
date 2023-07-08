@@ -46,10 +46,10 @@ Set deployment name: **etl-deploy**
 
 Set **process** (local) infrastructure
 
-Set work pool name: **etl-worker**
-
-**Initiate the job:** 
+Set work pool name: **etl-worker**  
 
 prefect.yaml file contains pre-configured parameters to deploy.
+
+**Initiate the job:**
 
 `prefect worker start --pool etl-worker`
