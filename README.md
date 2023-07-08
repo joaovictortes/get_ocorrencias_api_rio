@@ -12,6 +12,6 @@ prefect deploy .base/functions.py:ocorrencias_workflow --interval 1200        ##
 ##Set work pool name: etl-worker     
 
 
-2. To iniciate the job, run the following line:
+**To iniciate the job, run the following line:**
 
 prefect worker start --pool etl-worker                                        ##Iniciating the flow
