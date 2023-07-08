@@ -39,6 +39,8 @@ This Python data workflow performs a series of steps to extract data from Rio de
 
 **Install all packages listed on requirements.txt**
 
+**Download functions.py from the repository to a local base directory**
+
 **Build the deploy and schedule it to run every 20 minutes:**
 
 `prefect deploy .base/functions.py:ocorrencias_workflow --interval 1200`
