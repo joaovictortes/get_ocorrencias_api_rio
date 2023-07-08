@@ -51,13 +51,13 @@ def to_dataframe(lista_atividades):
     df = pd.DataFrame(lista_atividades, columns=["id", "inicio", "titulo", "descricao", "status", "orgao"])
     df = df[df['orgao'] == 'CET-RIO']
     df.sort_values(by=['inicio'], inplace=True)
-    df.to_csv("dados_eventos.csv", index=False, mode='a', header=False)
+    df.to_csv("dados_eventos.csv", index=False, mode='a', header=False, encoding='latin-1')
 
 @task(name="remove_duplicates")
 def remove_duplicates():
-    df = pd.read_csv('dados_eventos.csv')
+    df = pd.read_csv('dados_eventos.csv', encoding='latin-1')
     df = df.drop_duplicates(keep='last')
-    df.to_csv("dados_eventos.csv", index=False)
+    df.to_csv("dados_eventos.csv", index=False, encoding='latin-1')
     
     
 @flow
