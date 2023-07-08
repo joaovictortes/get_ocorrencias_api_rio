@@ -1,5 +1,7 @@
 # get_ocorrencias_api_rio
 
 
-Prefect config:
-prefect deployment build .src/functions.py:ocorrencias_worfklow --name rio-api --apply
+Run the following command to build the deploy and schedule it to run every 20 minutes:
+
+prefect deploy .base/<file.py>:<flow name> --interval <interval between runs>
+prefect deploy .base/functions.py:ocorrencias_workflow --interval 1200
