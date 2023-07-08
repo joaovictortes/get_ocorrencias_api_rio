@@ -21,7 +21,7 @@ This Python data workflow performs a series of steps to extract data from Rio de
                    |
                    v
          +-------------------+
-         | to_csv           		|		--------------------> LOAD
+         | to_csv            |		--------------------> LOAD
          +-------------------+
 
 **get_ocorrencias:** extracts data as json by making a request to an API and retrieving open occurrences.
