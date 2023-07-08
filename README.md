@@ -28,11 +28,9 @@ This Python data workflow performs a series of steps to extract data from Rio de
 
 **get_atividades:** extracts data by iterating over each **eventoId** obtained from the previous step and consuming "atividades" API to retrieve activity data for each event.
 
-**to_dataframe:** converts the list with the extracted data into a pandas dataframe. It structures and prepares the data for further processing.
+**to_dataframe:** selects only actions from "CET-RIO", converts the list with the data into a pandas dataframe, export to csv.
 
-**remove_duplicates:** transforms the df by removing any duplicate entries, ensuring data integrity.
-
-**to_csv:** loads the transformed data into a CSV file. It writes the DataFrame to a CSV file.
+**remove_duplicates:** import the recently saved csv, remove its duplicates and save it.
 
 
 **RUNNING INSTRUCTIONS:**
