@@ -37,6 +37,7 @@ This Python data workflow performs a series of steps to extract data from Rio de
 
 **RUNNING INSTRUCTIONS:**
 
+**Install all packages listed on requirements.txt**
 
 **Build the deploy and schedule it to run every 20 minutes:**
 
