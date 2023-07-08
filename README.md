@@ -56,3 +56,5 @@ prefect.yaml file contains pre-configured parameters to deploy.
 **Initiate the job:**
 
 `prefect worker start --pool etl-worker`
+
+The file dados_eventos.csv will be created in the base directory.
